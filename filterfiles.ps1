@@ -17,7 +17,8 @@ foreach ($Path in @($SourcePath, $DestPath)) {
 Write-Host "Creando archivos en $SourcePath..."
 $extensions = @(".txt", ".log")
 for ($i = 1; $i -le 10; $i++) {
-    $ExtensionIndex = ($i - 1) % $extensions.Count # Evita desbordamientos
+    # Ajusta el índice para que empiece en 0, ya que los arrays en PowerShell son indexados desde 0.
+    $ExtensionIndex = ($i - 1) % $extensions.Count # Extension.counts Devuelve la cantidad de elementos en $extensions
     $FileName = "file$i" + $extensions[$ExtensionIndex]
     $FilePath = Join-Path -Path $SourcePath -ChildPath $FileName
     New-Item -Path $FilePath -ItemType File -Force | Out-Null
