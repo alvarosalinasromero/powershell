@@ -37,5 +37,7 @@ Get-ChildItem -Path $DestPath | ForEach-Object {
     $NewName = "filtered_" + $_.Name
     Rename-Item -Path $_.FullName -NewName $NewName -Force | Out-Null
 }
+# Write-Host: Mensajes siempre visibles, útiles para el usuario final. Personaliza con colores.
+# Write-Verbose: Mensajes opcionales de depuración, útiles durante el desarrollo o troubleshooting.
 
 Write-Host "Operación completada exitosamente." -ForegroundColor Green
