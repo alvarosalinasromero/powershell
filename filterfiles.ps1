@@ -1,5 +1,5 @@
 # Variables
-$BasePath = "/Users/2341498/Desktop"
+$BasePath = "/temp"
 $SourceDir = "SourceFolder"
 $DestDir = "FilteredFolder"
 $SourcePath = Join-Path -Path $BasePath -ChildPath $SourceDir

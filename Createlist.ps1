@@ -1,7 +1,7 @@
 # Create and list a directory
 
 # Variables
-$BasePath = "/Users/alvaro/Desktop"
+$BasePath = "/temp"
 $Namedir = "PracticaPowerShell"
 $FullPath = Join-Path -Path $BasePath -ChildPath $Namedir # Se utiliza Join-Path para generar rutas dinámicamente, evitando errores al concatenar manualmente.
 

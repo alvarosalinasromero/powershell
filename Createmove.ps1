@@ -1,5 +1,5 @@
 # Variables
-$BasePath = "/Users/alvaro/Desktop"
+$BasePath = "/temp"
 $SourceDir = "SourceFolder"
 $DestDir = "DestinyFolder"
 $SourcePath = Join-Path -Path $BasePath -ChildPath $SourceDir
